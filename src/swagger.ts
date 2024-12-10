@@ -13,7 +13,7 @@ const swaggerOptions = {
          },
       ],
    },
-   apis: ["./src/**/*.ts"], // Path to the API docs (adjust if necessary)
+   apis: ["./src/docs/*.swagger.ts"],
 };
 
 export default swaggerOptions;
