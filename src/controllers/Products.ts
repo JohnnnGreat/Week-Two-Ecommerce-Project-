@@ -40,3 +40,15 @@ export const updateProducts = async (req: Request, res: Response, next: NextFunc
       next(error);
    }
 };
+
+export const deleteProducts = async (req: Request, res: Response, next: NextFunction): Promise<Response | any> => {
+   try {
+      const { productId } = req.params;
+
+      await Product.findByIdAndDelete(productId);
+
+      res.status(204).json({ message: "Product Deleled Successfully" });
+   } catch (error) {
+      next(error);
+   }
+};

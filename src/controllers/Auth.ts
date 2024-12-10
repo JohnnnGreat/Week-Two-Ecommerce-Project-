@@ -3,7 +3,7 @@ import Auth, { AuthType } from "../Schema/Auth";
 
 export const Register = async (req: Request, res: Response, next: NextFunction): Promise<Response | any> => {
    try {
-      const { email } = req.body;
+
       const user = await Auth.findOne({ email: req.body.email });
 
       if (user) {

@@ -185,3 +185,50 @@
  *       404:
  *         description: Product not found
  */
+
+/**
+ * @swagger
+ * /api/v1/products/{id}:
+ *   delete:
+ *     summary: Delete a product
+ *     tags:
+ *       - Products
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: The ID of the product to delete
+ *     responses:
+ *       204:
+ *         description: Product successfully deleted (No content returned)
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type:object
+ *               properties:
+ *                 message:
+ *                   type:string
+ *                   example:Product Deleled Successfully
+ *       400:
+ *         description: Bad Request - Invalid ID supplied
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: "Invalid product ID"
+ *       404:
+ *         description: Not Found - Product not found
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: "Product not found"
+ */
