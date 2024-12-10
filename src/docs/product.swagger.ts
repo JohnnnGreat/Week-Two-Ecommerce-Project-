@@ -12,6 +12,9 @@
  *           schema:
  *             type: object
  *             properties:
+ *               uploadBy:
+ *                 type: string
+ *                 example: "60c72b2f5f9b4e3f8b3e5c1b"
  *               productName:
  *                 type: string
  *                 description: Name of the product
@@ -46,6 +49,9 @@
  *                 product:
  *                   type: object
  *                   properties:
+ *                     uploadBy:
+ *                         type: string
+ *                         example: "60c72b2f5f9b4e3f8b3e5c1b"
  *                     productName:
  *                       type: string
  *                       example: "Smartphone"
@@ -86,6 +92,9 @@
  *                   items:
  *                     type: object
  *                     properties:
+ *                       uploadBy:
+ *                         type: string
+ *                         example: "60c72b2f5f9b4e3f8b3e5c1b"
  *                       productName:
  *                         type: string
  *                         example: "Smartphone"
