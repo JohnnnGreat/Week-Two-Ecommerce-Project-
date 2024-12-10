@@ -22,7 +22,7 @@
  *               productImage:
  *                 type: string
  *                 description: URL of the product image
- *                 example: "https://example.com/image.jpg"
+ *                 example: "https://placehold.co/300x400"
  *               productPrice:
  *                 type: number
  *                 description: Price of the product
@@ -57,7 +57,7 @@
  *                       example: "Smartphone"
  *                     productImage:
  *                       type: string
- *                       example: "https://example.com/image.jpg"
+ *                       example: "https://placehold.co/300x400"
  *                     productPrice:
  *                       type: number
  *                       example: 299.99
@@ -100,7 +100,7 @@
  *                         example: "Smartphone"
  *                       productImage:
  *                         type: string
- *                         example: "https://example.com/image.jpg"
+ *                         example: "https://placehold.co/300x400"
  *                       productPrice:
  *                         type: number
  *                         example: 299.99
@@ -141,7 +141,7 @@
  *               productImage:
  *                 type: string
  *                 description: URL of the product image
- *                 example: "https://example.com/image.jpg"
+ *                 example: "https://placehold.co/300x400"
  *               productPrice:
  *                 type: number
  *                 description: The price of the product
@@ -170,7 +170,7 @@
  *                       example: "Smartphone"
  *                     productImage:
  *                       type: string
- *                       example: "https://example.com/image.jpg"
+ *                       example: "https://placehold.co/300x400"
  *                     productPrice:
  *                       type: number
  *                       example: 299.99
