@@ -5,6 +5,7 @@ import swaggerOptions from "./swagger";
 import { errorHandler } from "./middleware/errorHandler";
 import productRouter from "./routes/productRoutes";
 import connectDB from "./mongoose.config";
+import AuthRouter from "./routes/authRoutes";
 
 const app = express();
 const PORT = 3000;
@@ -13,6 +14,7 @@ const PORT = 3000;
 app.use(express.json());
 
 app.use("/api/v1/products", productRouter);
+app.use("/api/v1/authentication", AuthRouter);
 // Swagger setup
 const swaggerDocs = swaggerJsdoc(swaggerOptions);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));

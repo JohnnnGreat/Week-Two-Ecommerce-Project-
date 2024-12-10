@@ -1,3 +1,5 @@
+import authSwagger, { loginSwagger } from "./docs/auth.swagger";
+
 const swaggerOptions = {
    definition: {
       openapi: "3.0.0",
@@ -12,8 +14,14 @@ const swaggerOptions = {
             description: "Development server",
          },
       ],
+      paths: {},
    },
    apis: ["./src/docs/*.swagger.ts"],
+};
+
+swaggerOptions.definition.paths = {
+   ...authSwagger,
+   ...loginSwagger,
 };
 
 export default swaggerOptions;
