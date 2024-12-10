@@ -47,7 +47,7 @@ export const deleteProducts = async (req: Request, res: Response, next: NextFunc
 
       await Product.findByIdAndDelete(productId);
 
-      res.status(204).json({ message: "Product Deleled Successfully" });
+      res.status(200).json({ message: "Product Deleled Successfully" });
    } catch (error) {
       next(error);
    }

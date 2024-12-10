@@ -188,29 +188,29 @@
 
 /**
  * @swagger
- * /api/v1/products/{id}:
+ * /api/v1/products/{productId}:
  *   delete:
  *     summary: Delete a product
  *     tags:
  *       - Products
  *     parameters:
  *       - in: path
- *         name: id
+ *         name: productId
  *         required: true
  *         schema:
  *           type: string
  *         description: The ID of the product to delete
  *     responses:
- *       204:
- *         description: Product successfully deleted (No content returned)
+ *       200:
+ *         description: Product successfully deleted
  *         content:
  *           application/json:
  *             schema:
- *               type:object
+ *               type: object
  *               properties:
  *                 message:
- *                   type:string
- *                   example:Product Deleled Successfully
+ *                   type: string
+ *                   example: "Product deleted successfully"
  *       400:
  *         description: Bad Request - Invalid ID supplied
  *         content:
