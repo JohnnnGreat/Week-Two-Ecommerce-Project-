@@ -45,6 +45,12 @@ export const deleteProducts = async (req: Request, res: Response, next: NextFunc
    try {
       const { productId } = req.params;
 
+      const findProductInDatabase = await Product.findById(productId);
+
+      if (!findProductInDatabase) {
+         return res.status(404).json({ message: "Product not found" });
+      }
+
       await Product.findByIdAndDelete(productId);
 
       res.status(200).json({ message: "Product Deleled Successfully" });
